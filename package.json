@@ -1,0 +1,31 @@
+{
+  "name": "html5-scafold",
+  "version": "1.0.0",
+  "description": "Personal scafold for frontend projects",
+  "main": "site/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octopusinvitro/html5-scafold.git"
+  },
+  "author": "Octopus in vitro",
+  "license": "LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/octopusinvitro/html5-scafold/issues"
+  },
+  "homepage": "https://github.com/octopusinvitro/html5-scafold#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  }
+}
