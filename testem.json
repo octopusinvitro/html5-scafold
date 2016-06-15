@@ -1,0 +1,48 @@
+{
+  "test_page": "./app/js/index.html",
+  "launch_in_ci": [
+    "Headless Chrome",
+    "Headless Firefox"
+  ],
+  "launchers": {
+    "Headless Chrome": {
+      "exe": "/usr/bin/google-chrome",
+      "args": [
+        "--headless",
+        "--no-sandbox",
+        "--disable-gpu",
+        "--remote-debugging-port=9222",
+        "--remote-debugging-address=0.0.0.0",
+        "--no-sandbox"
+      ]
+    },
+    "Headless Firefox": {
+      "exe": "/usr/bin/firefox",
+      "args": [
+        "--headless",
+        "--no-sandbox",
+        "--disable-gpu",
+        "--remote-debugging-port=9222",
+        "--remote-debugging-address=0.0.0.0",
+        "--no-sandbox"
+      ]
+    }
+  },
+  "browser_args": {
+    "Headless Chrome": [
+      "--headless",
+      "--disable-gpu",
+      "--remote-debugging-port=9222",
+      "--remote-debugging-address=0.0.0.0",
+      "--no-sandbox"
+    ],
+    "Headless Firefox": [
+      "--headless",
+      "--disable-gpu",
+      "--remote-debugging-port=9222",
+      "--remote-debugging-address=0.0.0.0",
+      "--no-sandbox"
+    ]
+  },
+  "browser_disconnect_timeout": 60
+}

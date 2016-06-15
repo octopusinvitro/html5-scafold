@@ -1,0 +1,27 @@
+image: node:latest
+
+cache:
+  paths:
+  - node_modules/
+
+before_script:
+  # Download Chrome
+  - sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list'
+  - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+  # Download firefox
+  - apt update -y && apt install software-properties-common -y
+  - apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A6DCF7707EBC211F
+  - apt-add-repository "deb http://ppa.launchpad.net/ubuntu-mozilla-security/ppa/ubuntu bionic main"
+  # Install both
+  - apt update -y && apt install google-chrome-stable firefox unzip -y
+  # Download Jasmine lib folder
+  - mkdir tmp && cd tmp
+  - curl -L 'https://github.com/jasmine/jasmine/releases/download/v4.0.1/jasmine-standalone-4.0.1.zip' --output jasmine.zip
+  - unzip jasmine.zip && cp -r lib ../app/js && cd - && rm -rf tmp
+
+test_async:
+  script:
+    # - Xvfb :0 -ac -screen 0 1024x768x24 &
+    # - export DISPLAY=:99
+    - npm install
+    - npm test
