@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "site/js/main.js",
-  "directories": { },
+  "directories": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +13,7 @@
     "browser-sync": "^2.12.3",
     "del": "*",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^3.0.1",
     "gulp-sass": "^2.2.0",
