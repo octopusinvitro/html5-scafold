@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/octopusinvitro/html5-scafold#readme",
   "devDependencies": {
-    "browser-sync": "^2.27.8",
+    "browser-sync": "^2.27.9",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
