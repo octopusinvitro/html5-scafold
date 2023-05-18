@@ -24,7 +24,7 @@
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@babel/eslint-parser": "^7.19.1",
-    "browser-sync": "^2.29.1",
+    "browser-sync": "^2.29.3",
     "del": "^6.0.0",
     "eslint": "8.40.0",
     "gulp": "^4.0.2",
