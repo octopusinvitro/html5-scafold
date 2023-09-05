@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
-    "@babel/eslint-parser": "^7.22.11",
+    "@babel/eslint-parser": "^7.22.15",
     "browser-sync": "^2.29.3",
     "del": "^7.1.0",
     "eslint": "8.48.0",
