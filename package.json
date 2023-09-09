@@ -22,7 +22,7 @@
     "node": "16.x"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.15",
+    "@babel/core": "^7.22.17",
     "@babel/eslint-parser": "^7.22.15",
     "browser-sync": "^2.29.3",
     "del": "^7.1.0",
