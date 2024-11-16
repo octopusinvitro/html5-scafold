@@ -35,7 +35,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.1.0",
-    "sass": "^1.77.8",
+    "sass": "^1.81.0",
     "testem": "^3.15.2"
   }
 }
